@@ -1,1 +1,74 @@
 /* Feuille de style de la page « Le poids caché du web » */
+body{
+    font-family:'Times New Roman', Times, serif;
+    color:purple;
+    background-color: plum;
+    line-height: 1.6;
+}
+body{
+    max-width: 800px;
+    margin:auto;
+    padding: 20px;
+}
+h1,h2 {
+    color:purple;
+    border-bottom:2px lavender;
+    padding-bottom: 5px;
+}
+a{
+    color:midnightblue;
+    text-decoration: underline;
+}
+a:hover{
+    color: midnightblue;
+    text-decoration:cornflowerblue;
+}
+img {
+    max-width: max-content;
+    border-radius: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid pink;
+    padding: 10px 15px;
+    text-align:justify;
+}
+th {
+    background-color: cornflowerblue;
+    color: darkblue;
+}
+.outils {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px;
+  background-color: lavender;
+  border-radius: 8px;
+  border: 1px solid purple;
+}
+body.sombre {
+  background-color: #161024;
+  color: lavender;
+}
+
+.sombre h1,
+.sombre h2 {
+  color: plum;
+  border-bottom-color: plum;
+}
+
+.sombre .outils {
+  background-color: #24193b;
+  border-color: plum;
+}
+
+.sombre a {
+  color: cornflowerblue;
+}
