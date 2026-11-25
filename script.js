@@ -28,3 +28,24 @@ if (heure < 12) {
 } else {
   salutation.textContent = "Bonsoir, bonne lecture !";
 }
+
+const POIDS_PAGE_MO = 2;
+const champPages = document.querySelector("#pages-par-jour");
+const resultat = document.querySelector("#resultat");
+
+document.querySelector("#bouton-calculer").addEventListener("click", function () {
+  const pagesParJour = Number(champPages.value);
+  const goParAn = Math.round((pagesParJour * POIDS_PAGE_MO * 365) / 1000);
+
+  let message = "Environ " + goParAn + " Go par an.";
+
+  if (goParAn < 10) {
+    message = message + " C'est une consommation légère.";
+  } else if (goParAn < 100) {
+    message = message + " C'est une consommation modérée.";
+  } else {
+    message = message + " C'est une consommation importante.";
+  }
+
+  resultat.textContent = message;
+});
